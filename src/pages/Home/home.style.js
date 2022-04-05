@@ -3,11 +3,6 @@ export const HomeContainer = styled.div`
 background:rgba(0,0,0, .9) ;
   height: 100vh;
   width:100vw ;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff; */
 
   .home-details{
     color:#fff ;
@@ -50,5 +45,20 @@ background:rgba(0,0,0, .9) ;
 
   small {
     color: red;
+  }
+
+  @media (max-width:425px) {
+    .home-details{
+      width:80vw ;
+    }
+
+    h2{
+      font-size:1.5rem ;
+    }
+
+    a{
+      font-size: .8rem;
+      padding: 8px;
+    }
   }
 `;

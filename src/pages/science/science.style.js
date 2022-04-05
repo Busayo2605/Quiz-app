@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background: rgba(0, 0, 0, 0.7);
-  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  /* width:100% ; */
 
   .quiz-details {
     display: flex;
@@ -11,9 +12,8 @@ export const Container = styled.div`
     align-items: center;
     height: 100%;
   }
-
   .quiz {
-    min-width: 90%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,6 @@ export const Container = styled.div`
   .question--container {
     border: 2px solid #fff;
     padding: 20px;
-    /* min-width: 75%; */
     border-radius: 99px;
     text-align: center;
 
@@ -62,5 +61,23 @@ export const Container = styled.div`
   .question-ctrl {
     color: #fff;
     font-size: 2.5rem;
+  }
+
+  @media (max-width: 425px) {
+    .question--container {
+      padding: 18px;
+      margin-bottom: 16px;
+      .question {
+        font-size: 16px;
+      }
+    }
+
+    .quiz {
+      width: 100%;
+    }
+    .option--container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;

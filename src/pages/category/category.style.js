@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CategoryContainer = styled.div`
   background: rgba(0, 0, 0, 0.7);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 
   .category--details {
     display: flex;
@@ -29,6 +29,16 @@ export const CategoryContainer = styled.div`
         opacity: 0.7;
         transition: all ease-in 300ms;
       }
+    }
+  }
+
+  @media (max-width:425px) {
+    .category--details {
+      a{
+        font-size: .8rem;
+        padding: 8px;
+      }
+
     }
   }
 `;
