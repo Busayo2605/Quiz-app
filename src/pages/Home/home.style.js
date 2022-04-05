@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const HomeContainer = styled.div`
-background:rgba(0,0,0, .9) ;
+background:rgba(0,0,0, .7) ;
   height: 100vh;
   width:100vw ;
 
