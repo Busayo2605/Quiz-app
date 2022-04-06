@@ -6,7 +6,7 @@ export const CatArray = [
   },
   {
     id: 2,
-    name: "Mathematics",
+    name: "Science",
     path: "/science",
   },
   {
