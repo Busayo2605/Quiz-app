@@ -4,6 +4,7 @@ import Navbar from "../../component/navbar/Navbar";
 import { Container } from "./Art.Style";
 import { QuizContext } from "../../context/QuizContext";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+import { Art } from "../../data/art";
 
 const Arts = () => {
   const {
@@ -19,11 +20,11 @@ const Arts = () => {
 
   
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=15&category=25&type=multiple")
-      .then((res) => res.json())
-      .then((data) => setQuestion(data.results[QuestionNumber + 1]))
-      .catch(err =>console.log(err.message));
-
+    const SortQuestion = Art.map((opt) => ({ sort: Math.random(), value: opt }))
+      .sort((a, b) => a.sort - b.sort)
+      .map((item) => item.value)
+    
+    setQuestion(SortQuestion[QuestionNumber + 1]);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
