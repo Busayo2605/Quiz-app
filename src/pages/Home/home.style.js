@@ -17,7 +17,6 @@ background:rgba(0,0,0, .7) ;
       font-size:2rem ;
       padding:10px ;
       letter-spacing: 2px;
-      font-family:cursive ;
       font-weight:500 ;
     }
   }
@@ -30,7 +29,6 @@ background:rgba(0,0,0, .7) ;
     border: 2px solid #f4f4f4;
     margin-left:10px ;
     color: #f4f4f4;
-    font-family: cursive;
     font-size: 1.1rem;
     letter-spacing:2px ;
     font-weight:lighter ;

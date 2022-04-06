@@ -6,7 +6,7 @@ import Politics from "../pages/politics";
 import Science from "../pages/science";
 import Score from "../pages/score";
 import Sport from "../pages/sport";
-// import Error from "../pages/error";
+import Error from "../pages/error";
 
 export const RouteList = [
   {
@@ -19,57 +19,57 @@ export const RouteList = [
   {
     id: 2,
     name: "QUIZ",
-    exact: true,
     path: "/quiz",
+    exact: true,
     component: Category,
   },
   {
     id: 3,
     name: "ART",
-    exact: true,
     path: "/art",
+    exact: true,
     component: Arts,
   },
   {
     id: 4,
     name: "SCIENCE",
-    exact: true,
     path: "/science",
+    exact: true,
     component: Science,
   },
   {
     id: 5,
     name: "SPORT",
-    exact: true,
     path: "/sport",
+    exact: true,
     component: Sport,
   },
   {
     id: 6,
     name: "POLITICS",
-    exact: true,
     path: "/politics",
+    exact: true,
     component: Politics,
   },
   {
     id: 7,
     name: "general-Knowledge",
-    exact: true,
     path: "/general-Knowlegde",
+    exact: true,
     component: General,
   },
   {
     id: 8,
     name: "SCORE",
-    exact: true,
     path: "/Score",
+    exact: true,
     component: Score,
   },
-  // {
-  //   id: 9,
-  //   name: "ERROR",
-  //   exact:true,
-  //   path: "*",
-  //   component: Error,
-  // },
+  {
+    id: 9,
+    name: "ERROR",
+    path: "*",
+    exact:true,
+    component: Error,
+  },
 ];

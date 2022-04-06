@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: rgba(0, 0, 0, 0.7);
   height: 100%;
-  /* width:100% ; */
 
   .quiz-details {
     display: flex;
@@ -27,7 +26,6 @@ export const Container = styled.div`
 
     .question {
       text-transform: capitalize;
-      font-family: cursive;
       color: #fff;
       font-size: 20px;
       font-weight: 500;
@@ -46,10 +44,6 @@ export const Container = styled.div`
       border: 2px solid #fff;
       border-radius: 99px;
       color: #fff;
-      transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      :hover {
-        background: blueviolet;
-      }
     }
   }
 

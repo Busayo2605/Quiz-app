@@ -17,7 +17,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     color: #fff;
-    width: 75%;
+    width:75% ;
     height: 35%;
     border-radius: 24px;
   }
@@ -27,7 +27,7 @@ export const Container = styled.div`
     h2 {
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 10px;
     }
     span {
@@ -43,24 +43,26 @@ export const Container = styled.div`
     border-radius: 99px;
     text-align: center;
     margin-top: 15px;
+    transition: all 2s linear;
   }
 
   @media (max-width: 425px) {
     .details {
-      h2 {
-        font-size: 1.5rem;
-      }
-      span {
-        font-size: 1.5rem;
-      }
+    h2 {
+      font-size: 2.5rem;
     }
+    span {
+      font-size: 1.5rem;
+    }
+  }
 
-    .info {
-      height: 30%;
-      width: 90%;
-    }
-    a {
-      border-radius: 16px;
-    }
+  .info{
+    height: 30%;
+    width:90%
+  }
+
+  a{
+    border-radius: 16px;
+  }
   }
 `;

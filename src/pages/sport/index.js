@@ -42,7 +42,6 @@ const Sport = () => {
     }, 2000);
   }, [QuestionNumber, setLoading, setQuestion]);
 
-  console.log(Question, Option);
 
   return (
     <div>
