@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import { Art } from "../../data/art";
 import Loader from "../../component/loader/Loader";
 import Navbar from "../../component/navbar/Navbar";
 import { Container } from "./Art.Style";
@@ -18,6 +17,18 @@ const Arts = () => {
     handleAnswer,
   } = useContext(QuizContext);
 
+  
+  useEffect(() => {
+    fetch("https://opentdb.com/api.php?amount=15&category=25&type=multiple")
+      .then((res) => res.json())
+      .then((data) => setQuestion(data.results[QuestionNumber + 1]))
+      .catch(err =>console.log(err.message));
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [QuestionNumber, setLoading, setQuestion]);
+
   const opts = [];
   const opt = opts.concat(Question.incorrect_answers);
   const option = opt.concat(Question.correct_answer);
@@ -27,19 +38,6 @@ const Arts = () => {
     .sort((a, b) => a.sort - b.sort)
     .map((item) => item.value);
 
-  useEffect(() => {
-    const SortQuestion = Art.map((quest) => ({
-      sort: Math.random(),
-      value: quest,
-    }))
-      .sort((a, b) => a.sort - b.sort)
-      .map((item) => item.value);
-
-    setQuestion(SortQuestion[QuestionNumber + 1]);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, [QuestionNumber, setLoading, setQuestion]);
 
   return (
     <div>
