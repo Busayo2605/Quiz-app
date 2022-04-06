@@ -4,7 +4,7 @@ import { Container } from "./Error.style";
 
 const Error = () => {
   return (
-    <div className="score">
+    <div className="quiz-conatiner">
       <Container>
         <div className="info">
           <div className="details">
