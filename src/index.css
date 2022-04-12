@@ -1,19 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.home{
-  background: url('./assets/quiz.jpg');
+.home {
+  background: url("./assets/quiz.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,15 +23,15 @@ code {
   justify-content: center;
   flex-direction: column;
 }
-.score{
-  background: url('./assets/congratulation.jpg');
+.score {
+  background: url("./assets/congratulation.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
-.quiz-conatiner{
-  background: url('./assets/bg-3.jpg');
+.quiz-conatiner {
+  background: url("./assets/bg-3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
